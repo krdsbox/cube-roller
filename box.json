@@ -1,10 +1,10 @@
 {
-	"name": "Box starter",
-	"description": "An optional & minimal starter kit for krdsbox components",
-	"author": "Moorthy",
-	"author-email": "moorthy.g@krds.fr",
-	"image": "relative path of 500x500 image ( empty string if no image )",
-	"gif": "relative path of 500x500 animated gif ( empty string if no image )",
-	"tags": "comma, separated, tags",
-	"repo-url": "https://github.com/krdsbox/box-starter"
+	"name": "Cube Roller",
+	"description": "It was a 3D Cube Roller that rotated around one of the axes working with CSS 3D",
+	"author": "Dicson",
+	"author-email": "dicson.deepak@krds.fr",
+	"image": "img/packshot.png",
+	"gif": "img/packshot.gif",
+	"tags": "3d cube, cube roller, CSS 3D effects",
+	"repo-url": "https://github.com/krdsbox/cube-roller"
 }

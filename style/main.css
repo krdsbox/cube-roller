@@ -173,6 +173,7 @@ h1, h2, h3, h4, h5, h6  {
 }
 .cube-roller, .cube-main {
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 .cube-slider {
 	background-position: center;
@@ -214,6 +215,7 @@ h1, h2, h3, h4, h5, h6  {
 	position: absolute;
 	left: 50%;
 	top: 0;
+	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 .cube-grid {
@@ -223,6 +225,7 @@ h1, h2, h3, h4, h5, h6  {
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	backface-visibility: hidden;
 }
 .cube-grid i, .cube-grid:after, .cube-grid:before {
