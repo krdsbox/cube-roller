@@ -263,10 +263,10 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 .cube-roller._down .cube-slider._active_cnt .cube-content-inner {
-	transform: translateY(60%) translateZ(0px);
+	transform: translateY(50%) translateZ(0px);
 }
 .cube-roller._up .cube-slider._active_cnt .cube-content-inner {
-	transform: translateY(-60%) translateZ(0px);
+	transform: translateY(-50%) translateZ(0px);
 }
 .cube-roller._tempTrans .cube-slider .cube-content-inner {
 	transition: transform 1s;
