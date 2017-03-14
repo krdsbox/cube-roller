@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Box Starter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Cube Roller</title>
 	<link rel="icon" href="./favicon.png">
-	<link rel="stylesheet" href="style/box.css">
-	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/box.css?v=12">
+	<link rel="stylesheet" href="style/main.css?v=5">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
 	<nav class="boxActions">
@@ -20,8 +22,76 @@
 			<img src="img/github.svg" alt="Github" />
 		</a>
 	</nav>
-	<h1>Box Starter</h1>
-	<p>An optional &amp; minimal starter kit for krdsbox components</p>
+	<div id="loader" class="app-loader">
+		<em></em>
+		<div class="cube-loader">
+			<div class="cube-loader-main">
+				<div class="c-l-1">Fast & Furious</div>
+				<div class="c-l-2">Doomsday</div>
+				<div class="c-l-3">Lucy</div>
+				<div class="c-l-4">Brave</div>
+			</div>
+		</div>
+	</div>
+	<div class="cube-container">
+		<div class="cube-box">
+			<div class="cube-main">
+				<div class="cube-roller" data-role="cube-main">
+					<div id="CS-1" class="cube-slider c-s-01" data-role="front">
+						<div class="cube-grid"><i></i></div>
+						<div class="cube-content">
+							<div class="cube-content-middle">
+								<div class="cube-content-inner">
+									<h3>Fast & Furious</h3>
+									<p>Hobbs has Dominic and Brian reassemble their crew to take <br>down a team of mercenaries: Dominic unexpectedly gets <br>convoluted also facing his presumed deceased girlfriend, Letty.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="CS-2" class="cube-slider c-s-02" data-role="bottom">
+						<div class="cube-grid"><i></i></div>
+						<div class="cube-content">
+							<div class="cube-content-middle">
+								<div class="cube-content-inner">
+									<h3>Doomsday</h3>
+									<p>A futuristic action thriller where a team of <br>people work to prevent a disaster threatening <br>the future of the human race.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="CS-3" class="cube-slider c-s-03" data-role="back">
+						<div class="cube-grid"><i></i></div>
+						<div class="cube-content">
+							<div class="cube-content-middle">
+								<div class="cube-content-inner">
+									<h3>Lucy</h3>
+									<p>A woman, accidentally caught in a dark deal, <br>turns the tables on her captors and transforms into a merciless <br>warrior evolved beyond human logic.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="CS-4" class="cube-slider c-s-04" data-role="top">
+						<div class="cube-grid"><i></i></div>
+						<div class="cube-content">
+							<div class="cube-content-middle">
+								<div class="cube-content-inner">
+									<h3>Brave</h3>
+									<p>Determined to make her own path in life, <br>Princess Merida defies a custom that brings chaos to her <br>kingdom. Granted one wish, Merida must rely on her bravery <br>and her archery skills to undo a beastly curse.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="arrows">
+			<svg>
+				<path class="a1" d="M0 0 L30 32 L60 0"></path>
+				<path class="a2" d="M0 20 L30 52 L60 20"></path>
+				<path class="a3" d="M0 40 L30 72 L60 40"></path>
+			</svg>
+		</div>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>
