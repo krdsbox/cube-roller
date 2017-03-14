@@ -1,4 +1,9 @@
 // pre load image
+var w = window.innerWidth,
+    img = (w > 1024) ? ['img/img-01.jpg', 'img/img-02.jpg', 'img/img-03.jpg', 'img/img-04.jpg'] :
+	 ['img/img-01-m.jpg', 'img/img-02-m.jpg', 'img/img-03-m.jpg', 'img/img-04-m.jpg']; // check device image
+
+console.log(w);
 function imgpreload( imgs, callback ) {
 	"use strict";
 	var loaded = 0,
@@ -20,7 +25,7 @@ function imgpreload( imgs, callback ) {
 	}
 }
 setTimeout(function(){
-	imgpreload(['img/img-01.jpg', 'img/img-02.jpg', 'img/img-03.jpg', 'img/img-04.jpg'], function( images ) {
+	imgpreload(img, function( images ) {
 		document.body.className = 'docReady';
 		setTimeout(function(){
 			document.getElementById('loader').style.display = 'none';
@@ -104,7 +109,7 @@ var cube3d	=	{
 	},
 	cubeinitialSetup: function() {
 		cX = 0,
-		pers3D	=	crH*8,
+		pers3D	=	crH*8 - 500,
 		transZ = crH/2;
 		boxFront.addClass('_active_cnt');
 		cubeRoll.css({
@@ -117,7 +122,7 @@ var cube3d	=	{
 	},
 	cubeResizeSetup: function() {
 		crH 		=	cubeRoll.height(),
-		pers3D	=	crH*8,
+		pers3D	=	crH*8 - 500,
 		transZ 	=	crH/2;
 		cubeRoll.css({
 			transform: "perspective("+pers3D+"px) translateZ(-"+transZ+"px)"
