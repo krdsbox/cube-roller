@@ -11,6 +11,11 @@
 	display: inline-block;
 	padding: 6px;
 }
+@media (max-width: 770px) {
+	.boxActions a img {
+		width: 25px;
+	}
+}
 @media (min-width: 50em) {
 	.boxActions {
 		text-align: left;
